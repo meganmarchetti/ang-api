@@ -1,0 +1,173 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books Page</title>
+</head>
+<body> -->
+    <div class="page-div">
+        <div class="up-div">
+
+        
+        <div class="add-div">
+            <h2>Add New Book</h2>
+            <div>
+                <label for="title">
+                    Title
+                </label>
+                <input [(ngModel)]="newbook.title" type="text" id="title" >
+            </div>
+            <div>
+                <label for="subtitle">
+                    Subtitle
+                </label>
+                <input [(ngModel)]="newbook.subtitle" type="text" id="subtitle" >
+            </div>
+            <div>
+                <label for="author">
+                    Author
+                </label>
+                <input [(ngModel)]="newbook.author" type="text" id="author" >
+            </div>
+            <div>
+                <label for="published">
+                    Published Date
+                </label>
+                <input [(ngModel)]="newbook.published" type="date" id="published" >
+            </div>
+            <div>
+                <label for="publisher">
+                    Publisher
+                </label>
+                <input [(ngModel)]="newbook.publisher" type="text" id="publisher" >
+            </div>
+            <div>
+                <label for="pages">
+                    Pages
+                </label>
+                <input [(ngModel)]="newbook.pages" type="number" id="pages" >
+            </div>
+            <div>
+                <label for="description">
+                    Description
+                </label>
+                <input [(ngModel)]="newbook.description" type="text" id="description" >
+            </div>
+            <div>
+                <label for="website">
+                    Website
+                </label>
+                <input [(ngModel)]="newbook.website" type="url" id="website" >
+            </div>
+            <div>
+                <label for="inCart">
+                    in Cart
+                </label>
+                <input [(ngModel)]="newbook.inCart" type="text" id="inCart" >
+            </div>
+
+
+            <button class="sub-btn" (click)="postBook(newbook)">submit</button>
+
+        </div>
+        <div *ngIf="showV == true" class="put-div" id="put-div">
+            <button class="cls-btn"> <ion-icon name="close-outline" (click)="showPut(false)"></ion-icon></button>
+            <h2>Edit Existing Book</h2>
+            <div>
+                <label for="id">
+                    ID
+                </label>
+                <input [(ngModel)]="upbook.id" type="number" id="id" >
+            </div>
+            <div>
+                <label for="title">
+                    Title
+                </label>
+                <input [(ngModel)]="upbook.title" type="text" id="title" >
+            </div>
+            <div>
+                <label for="subtitle">
+                    Subtitle
+                </label>
+                <input [(ngModel)]="upbook.subtitle" type="text" id="subtitle" >
+            </div>
+            <div>
+                <label for="author">
+                    Author
+                </label>
+                <input [(ngModel)]="upbook.author" type="text" id="author" >
+            </div>
+            <div>
+                <label for="published">
+                    Published Date
+                </label>
+                <input [(ngModel)]="upbook.published" type="date" id="published" >
+            </div>
+            <div>
+                <label for="publisher">
+                    Publisher
+                </label>
+                <input [(ngModel)]="upbook.publisher" type="text" id="publisher" >
+            </div>
+            <div>
+                <label for="pages">
+                    Pages
+                </label>
+                <input [(ngModel)]="upbook.pages" type="number" id="pages" >
+            </div>
+            <div>
+                <label for="description">
+                    Description
+                </label>
+                <input [(ngModel)]="upbook.description" type="text" id="description" >
+            </div>
+            <div>
+                <label for="website">
+                    Website
+                </label>
+                <input [(ngModel)]="upbook.website" type="url" id="website" >
+            </div>
+            <div>
+                <label for="inCart">
+                    in Cart
+                </label>
+                <input [(ngModel)]="upbook.inCart" type="text" id="inCart" >
+            </div>
+
+
+            <button class="ed-btn" (click)="putBooks(upbook); clearFields()">edit</button>
+        </div>
+
+
+        </div>
+
+
+        <div class="book-div" *ngFor="let book of books">
+            <div class="book-info">
+                <h3>{{ book.id }}</h3>
+                <p class="p-title">{{ book.title }}:</p>
+                <p class="p-subtitle">{{ book.subtitle }} </p>
+                <p class="p-author">by {{ book.author }}</p> 
+                <p class="p-published">{{ book.published }}</p>
+                <p class="p-publisher">{{ book.publisher }}</p>
+                <p class="p-pages">{{ book.pages }}</p>
+                <p class="p-desc">{{ book.description }}</p>
+                <p class="p-web">{{ book.website }}</p>
+                <p class="p-inCart">{{ book.inCart }}</p>
+
+            </div>
+            <div class="btn-div">
+
+                <button (click)="deleteBooks(book.id)" class="del-btn"><ion-icon name="trash-outline"></ion-icon></button> 
+
+                <button class="ref-btn" (click)="showPut(true)" ><ion-icon name="create-outline"></ion-icon></button>
+            </div>
+
+            
+            
+        </div>
+    </div>
+        <!-- </body>
+</html> -->

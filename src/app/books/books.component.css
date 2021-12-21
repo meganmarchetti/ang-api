@@ -1,0 +1,94 @@
+.page-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.book-div {
+  display: flex;
+  justify-content: space-between;
+  border: indigo solid 2px;
+  border-bottom: 0;
+  width: 50%;
+  padding: 20px;
+  background-color: lavender;
+}
+
+.add-div,
+.put-div {
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  border: indigo solid 2px;
+  background-color: lavender;
+}
+
+input {
+  margin: 5px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+}
+
+.book-div:last-child {
+  border-bottom: indigo solid 2px;
+}
+
+.book-div p {
+  margin: 5px;
+}
+
+.p-title {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.p-subtitle {
+  font-style: italic;
+  font-size: 20px;
+}
+
+.p-author {
+  font-size: 18px;
+}
+
+ion-icon {
+  font-size: 20px;
+  color: indigo;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  height: 30px;
+}
+
+.add-div button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: indigo solid 2px; */
+  color: #fff;
+  margin: 5px;
+  font-size: 20px;
+  background-color: indigo;
+}
+
+.ed-btn {
+  background-color: indigo;
+  color: #fff;
+}
+
+.up-div {
+  display: flex;
+  width: 50%;
+  justify-content: space-between;
+  margin: 15px;
+}
